@@ -476,7 +476,7 @@ class Api:
 
     def get_auth_id(self, username: str, password: str) -> str:
         """Logs in to Truth account and returns the session token"""
-        url = BASE_URL + "/oauth/token"
+        url = BASE_URL + "/oauth/v2/token"
         try:
             payload = {
                 "client_id": CLIENT_ID,
